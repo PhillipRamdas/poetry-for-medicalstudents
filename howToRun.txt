@@ -1,0 +1,5 @@
+cd C:\poetry-for-medicalstudents-main
+
+python3 -m http.server
+
+http://localhost:8000

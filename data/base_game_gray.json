@@ -1,0 +1,44 @@
+{
+    "game_data": [
+        {
+            "1": "Lupus",
+            "3": "Lupus Nephropathy"
+        },
+        {
+            "1": "Tuberculosis",
+            "3": "Miliary Tuberculosis"
+        },
+        {
+            "1": "Arthritis",
+            "3": "Rheumatoid Arthritis"
+        },
+        {
+            "1": "Hepatitis",
+            "3": "Viral Hepatitis"
+        },
+        {
+            "1": "Anemia",
+            "3": "Iron Deficiency Anemia"
+        },
+        {
+            "1": "Diabetes",
+            "3": "Diabetes Insipidus"
+        },
+        {
+            "1": "Pneumonia",
+            "3": "Lobar Pneumonia"
+        },
+        {
+            "1": "Cardiomyopathy",
+            "3": "Dilated Cardiomyopathy"
+        },
+        {
+            "1": "Epilepsy",
+            "3": "Temporal Lobe Epilepsy"
+        },
+        {
+            "1": "Cholecystitis",
+            "3": "Gangrenous Cholecystitis"
+        }
+    ]
+}

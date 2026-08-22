@@ -1,0 +1,20 @@
+Lupus
+Lupus Nephropathy
+Tuberculosis
+Miliary Tuberculosis
+Arthritis
+Rheumatoid Arthritis
+Hepatitis
+Viral Hepatitis
+Anemia
+Iron Deficiency Anemia
+Diabetes
+Diabetes Insipidus
+Pneumonia
+Lobar Pneumonia
+Cardiomyopathy
+Dilated Cardiomyopathy
+Epilepsy
+Temporal Lobe Epilepsy
+Cholecystitis
+Gangrenous Cholecystitis

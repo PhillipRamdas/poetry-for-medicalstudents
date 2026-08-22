@@ -1,4 +1,4 @@
-cd C:\poetry-for-medicalstudents-main
+cd C:\Coding\poetry-for-medicalstudents-main
 
 python3 -m http.server
 

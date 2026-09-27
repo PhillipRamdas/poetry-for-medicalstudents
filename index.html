@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verses for Cave Men</title>
+    <title>Poetry for Medical Students</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col items-center justify-center h-screen bg-gray-50">
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-slate-100 antialiased"><div class="min-h-screen flex flex-col items-center px-4 py-8 sm:py-12"><header class="w-full max-w-3xl text-center mb-8"><h1 class="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Poetry for Medical Students</h1><p class="mt-3 text-base sm:text-lg text-slate-300"></p></header>
 
     <!-- Options Menu -->
-    <div id="options-menu" class="border border-gray-200 rounded-lg shadow-lg w-96 bg-white">
-        <div class="p-4">
-            <h1 class="text-center text-xl font-bold mb-4">Options</h1>
+    <div id="options-menu" class="w-full max-w-xl overflow-hidden rounded-3xl border border-white/10 bg-white/95 text-slate-800 shadow-2xl shadow-black/30 backdrop-blur">
+        <div class="p-6 sm:p-8">
+            <div class="mb-6"><h2 class="text-2xl font-bold tracking-tight">Game Setup</h2><p class="mt-1 text-sm text-slate-500">Choose your timer and card packs to begin.</p></div>
             <div class="grid grid-cols-1 gap-2">
                 <div id="time-input-container" class="grid grid-cols gap-1">
                     <label for="time-input" class="font-bold">Timer length in seconds</label>
-                    <input type="number" id="time-input" class="border p-2 w-full focus:outline-none" value="60">
+                    <input type="number" id="time-input" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100" value="60">
                 </div>
 
                 <div id="card-packs-container" class="grid grid-cols gap-1">
@@ -38,47 +38,60 @@
                     </div>
                 </div>
 
-                <button id="start-game" class="bg-blue-100 text-blue-600 font-semibold hover:bg-blue-200 transition duration-300 p-2 focus:outline-none">Start</button>
+                <button id="start-game" class="mt-6 w-full rounded-xl bg-indigo-600 px-5 py-3.5 font-bold text-white shadow-lg shadow-indigo-600/20 transition duration-300 hover:-translate-y-0.5 hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-200">Start Game</button>
             </div>
         </div>
     </div>
 
     <!-- Main Game Screen (hidden initially) -->
-    <div id="game-screen" class="border border-gray-200 rounded-lg shadow-lg w-96 bg-white hidden">
+    <div id="game-screen" class="w-full max-w-xl overflow-hidden rounded-3xl border border-white/10 bg-white text-slate-800 shadow-2xl shadow-black/30 hidden">
         <!-- Top section -->
-        <div class="grid grid-cols-3 border-b border-gray-200 p-4">
+        <div class="grid grid-cols-3 border-b border-slate-200 bg-slate-50 p-5">
             <div class="flex flex-col justify-between">
-                <span id="reset-score" class="text-gray-500 font-semibold hover:text-black transition duration-300 cursor-pointer">Reset Score</span>
-                <span id="score" class="self-start text-lg font-bold text-gray-800">Score: 0</span>
+                <span id="reset-score" class="text-sm font-semibold text-slate-500 hover:text-indigo-600 transition duration-300 cursor-pointer">Reset Score</span>
+                <span id="score" class="self-start text-xl font-extrabold text-slate-900">Score: 0</span>
             </div>
             <div class="flex flex-col h-20 items-center justify-between">
-                <span id="word1" class="text-lg font-bold text-yellow-500 text-center break-words">Word1</span>
-                <span id="word3" class="text-lg font-bold text-green-500 text-center break-words">Word2</span>
+                <span id="word1" class="text-lg font-extrabold text-amber-500 text-center break-words">Word1</span>
+                <span id="word3" class="text-lg font-extrabold text-emerald-600 text-center break-words">Word2</span>
             </div>
-            <div class="flex justify-end">
-                <span id="timer-display" class="text-lg font-bold text-gray-800">Timer: 0</span>
+            <div class="flex items-center justify-center">
+                <span id="timer-display" class="rounded-full bg-indigo-100 px-3 py-1 text-sm font-bold text-indigo-700">Timer: 0</span>
             </div>
         </div>
 
         <!-- Buttons -->
-        <div class="grid grid-cols-3 divide-x divide-gray-200">
+        <div class="grid grid-cols-3 divide-x divide-slate-200">
             <!-- -1 -->
-            <button id="score-1" class="bg-red-100 text-red-600 font-semibold hover:bg-red-200 transition duration-300 flex items-center justify-center p-4 focus:outline-none">
+            <button id="score-1" class="bg-red-50 text-red-600 font-semibold hover:bg-red-100 transition duration-300 flex items-center justify-center p-4 focus:outline-none">
                 <span class="text-2xl">-1</span>
             </button>
             <!-- +1 -->
-            <button id="score+1" class="bg-yellow-100 text-yellow-600 font-semibold hover:bg-yellow-200 transition duration-300 flex items-center justify-center p-4 focus:outline-none">
+            <button id="score+1" class="bg-amber-50 text-amber-600 font-semibold hover:bg-amber-100 transition duration-300 flex items-center justify-center p-4 focus:outline-none">
                 <span class="text-2xl">+1</span>
             </button>
             <!-- +3 -->
-            <button id="score+3" class="bg-green-100 text-green-600 font-semibold hover:bg-green-200 transition duration-300 flex items-center justify-center p-4 focus:outline-none">
+            <button id="score+3" class="bg-emerald-50 text-emerald-600 font-semibold hover:bg-emerald-100 transition duration-300 flex items-center justify-center p-4 focus:outline-none">
                 <span class="text-2xl">+3</span>
             </button>
         </div>
     </div>
 
     <!-- Error Message (hidden initially) -->
-    <div id="error-message" class="border border-red-200 rounded-lg shadow-lg bg-red-200 w-96 mt-4 p-4 hidden"></div>
+    <div id="error-message" class="w-full max-w-xl mt-4 rounded-2xl border border-red-300 bg-red-50 p-4 text-red-700 shadow-lg hidden"></div>
+
+        <div class="mt-8 flex flex-col items-center gap-3">
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScThn04JtQC1vFtECECbDSjZPEpG5VaMOsjLt_65odQCYpfYA/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white shadow-lg backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/15 focus:outline-none focus:ring-4 focus:ring-indigo-300/30"
+            >
+                <span aria-hidden="true">⚑</span>
+                <span>Report an Issue</span>
+            </a>
+        </div>
+    </div>
 
     <!-- JavaScript Logic -->
     <script src="js/script.js"></script>

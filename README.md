@@ -2,9 +2,11 @@
 
 Like Poetry for Neanderthals but for Medical Professionals.
 
+[Try it out!](https://poetryformedicalstudents.github.io/)
+
 [Buy Poetry for Neanderthals](https://www.explodingkittens.com/products/poetry-for-neanderthals)
 
-<img width="648" height="345" alt="preview" src="https://github.com/user-attachments/assets/fe114974-19b4-43bd-8e10-6b4416a9e095" />
+<img width="849" height="455" alt="preview" src="https://github.com/user-attachments/assets/d7c08397-57ad-4ba8-8bcb-a72a1c1aa7c6" />
 
 
 Based on klrmngr/poetry-for-neanderthals
